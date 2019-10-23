@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tela_inicial"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_titulo"
+        android:layout_marginTop="20px"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="24sp"
+        android:textAlignment="center" />
+
+    <ListView
+        android:id="@+id/listaDeNotas"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="0.92"
+        android:layout_marginTop="20px"
+        android:layout_marginBottom="20px"/>
+
+    <Button
+        android:id="@+id/botaoCriarAnotacao"
+        android:text="Criar nova anotação"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="openNewNotesScreen"/>
+
+</LinearLayout>
